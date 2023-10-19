@@ -9,10 +9,8 @@ class Solution {
 
             digits[i] = 0
         }
-        
-        val returnArray = IntArray( digits.size + 1 )
-        returnArray[0] = 1
-        return returnArray
+
+        return intArrayOf(1) + digits
     }
 }
 
