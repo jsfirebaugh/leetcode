@@ -1,10 +1,10 @@
 class Solution {
-    public int numJewelsInStones(String jewels, String stones) {
+    public static int numJewelsInStones(String jewels, String stones) {
         int matches = 0;
 
-        for( int i = 0; i < stones.length(); i++ ){
-            if( jewels.indexOf(stones.charAt(i)) != -1 ){
-                matches = matches + 1;
+        for(int i = 0; i < stones.length(); i++){
+            if(jewels.indexOf(stones.charAt(i)) != -1){
+                matches += 1;
             }
         }
 
@@ -14,16 +14,14 @@ class Solution {
 
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Solution();
-
         String jewels1 = "aA";
         String stones1 = "aAAbbbb";
-        int result1 = solution.numJewelsInStones(jewels1, stones1);
-        System.out.println( result1 );
+        int result1 = Solution.numJewelsInStones(jewels1, stones1);
+        System.out.println(result1);
 
         String jewels2 = "z";
         String stones2 = "ZZ";
-        int result2 = solution.numJewelsInStones(jewels2, stones2);
-        System.out.println( result2 );
+        int result2 = Solution.numJewelsInStones(jewels2, stones2);
+        System.out.println(result2);
     }
 }
