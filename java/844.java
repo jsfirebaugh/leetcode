@@ -17,10 +17,10 @@ class Solution {
     }
 
     public boolean backspaceCompare(String s, String t) {
-        s = parseStringForBackspace(s);
-        t = parseStringForBackspace(t);
+        newS = parseStringForBackspace(s);
+        newT = parseStringForBackspace(t);
 
-        return Objects.equals(s, t);
+        return Objects.equals(newS, newT);
     }
 }
 
