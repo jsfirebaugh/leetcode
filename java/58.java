@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public int lengthOfLastWord(String s) {
         String[] wordArray = s.trim().split(" +");
