@@ -4,7 +4,7 @@ class Solution {
 
         while(columnNumber != 0){
             char newChar = (char)((columnNumber-1) % 26 + 65);
-            stringBuilder.insert(0,newChar);
+            stringBuilder.insert(0, newChar);
             columnNumber = (columnNumber - 1) / 26;
         }
 
