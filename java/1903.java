@@ -1,5 +1,5 @@
 class Solution {
-    public String largestOddNumber(String num) {
+    public String largestOddNumber2(String num) {
         char[] chars = num.toCharArray();
         int endIndex = -1;
 
@@ -12,6 +12,17 @@ class Solution {
         }
 
         return endIndex >= 0 ? num.substring(0, endIndex + 1) : "";
+    }
+
+    public String largestOddNumber(String num){
+        int i = num.length() - 1;
+
+        while(i >= 0){
+            if(num.charAt(i) % 2 == 1) return num.substring(0, i + 1);
+            i--;
+        }
+
+        return "";
     }
 }
 
