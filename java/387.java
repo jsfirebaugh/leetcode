@@ -9,6 +9,7 @@ class Solution {
         return -1;
     }
 }
+
 class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
