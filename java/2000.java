@@ -6,7 +6,7 @@ class Solution {
         }
 
         StringBuilder sb = new StringBuilder(word.substring(0, word.indexOf(ch) + 1));
-        
+
         return sb
                 .reverse()
                 .append(word.substring(word.indexOf(ch) + 1))
@@ -19,7 +19,7 @@ public class Main {
         Solution s = new Solution();
 
         System.out.println(s.reversePrefix("abcdefd", 'd'));
-
-
+        System.out.println(s.reversePrefix("xyxzxe", 'z'));
+        System.out.println(s.reversePrefix("abcd", 'z'));
     }
 }
