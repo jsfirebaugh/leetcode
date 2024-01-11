@@ -1,14 +1,8 @@
+import java.util.Arrays;
+
 class Solution {
     public int numOfStrings(String[] patterns, String word) {
-        int matching = 0;
-
-        for(String pattern : patterns){
-            if(word.contains(pattern)){
-                matching++;
-            }
-        }
-
-        return matching;
+        return (int)Arrays.stream(patterns).filter(word::contains).count();
     }
 }
 
@@ -22,6 +16,3 @@ public class Main {
 
     }
 }
-
-
-
