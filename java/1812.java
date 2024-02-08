@@ -10,7 +10,7 @@ public class Main {
 
         String[] inputs =  { "a1", "h3" };
 
-        for(String input: inputs){
+        for(String input : inputs){
             System.out.println(s.squareIsWhite(input));
         }
     }
