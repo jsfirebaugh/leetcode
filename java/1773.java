@@ -8,6 +8,7 @@ class Solution {
             Map.entry("color", 1),
             Map.entry("name", 2)
     );
+    
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         return items
                 .stream()
